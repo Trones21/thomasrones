@@ -1,0 +1,16 @@
+.profile {
+    outline-color: aliceblue;
+    outline-width: 2px;
+}
+
+.featuredProfile{
+    outline-color: rgb(135, 190, 144);
+    outline-width: 2px;
+
+}
+
+.profileList{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
