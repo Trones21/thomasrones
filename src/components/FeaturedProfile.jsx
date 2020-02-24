@@ -1,32 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 FeaturedProfile.propTypes = {
     siteName: PropTypes.string,
-    profileURL: PropTypes.string
+    profileURL: PropTypes.string,
+    hoverImg: PropTypes.string,
+    defaultImg: PropTypes.string,
 }
 
 function FeaturedProfile(props){
-    
-
-const handleHover = () => {
-
-}
-
+    const [img , setImg] = useState(props.defaultImg);
 
     return (
-        <div
+        <a
         className="featuredProfile" 
-        onHover={handleHover}
+        onMouseEnter={() => setImg(props.hoverImg)}
+        onMouseOut={() => setImg(props.defaultImg)}
+        href={props.profileURL}
+        target="_blank"
+        rel="noopener noreferrer"
         >
-            <img 
-            href={props.profileURL}
+            <img
             style={{
                 height:"20vh"
             }}
-            src={props.img} 
-            alt={props.siteName}></img>
-        </div>
+            src={img} 
+            alt={props.siteName}>
+               
+            </img>
+        </a>
     )
 };
 

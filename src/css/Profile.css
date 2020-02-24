@@ -1,12 +1,10 @@
 .profile {
-    outline-color: aliceblue;
-    outline-width: 2px;
+    margin: 0px 6px;
+
 }
 
 .featuredProfile{
-    outline-color: rgb(135, 190, 144);
-    outline-width: 2px;
-
+    margin: 2px 6px;
 }
 
 .profileList{

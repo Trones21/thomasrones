@@ -1,33 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { render } from '@testing-library/react';
+import "../css/Profile.css";
 
 Profile.propTypes = {
     siteName: PropTypes.string,
-    profileURL: PropTypes.string
+    profileURL: PropTypes.string,
+    hoverImg: PropTypes.string,
+    defaultImg: PropTypes.string,
 }
 
 function Profile(props){
-    
-
-const handleHover = () => {
-
-}
-
+        const [img , setImg] = useState(props.defaultImg);
 
     return (
-        <div
+        <a
         className="profile" 
-        onHover={handleHover}
+        onMouseEnter={() => setImg(props.hoverImg)}
+        onMouseOut={() => setImg(props.defaultImg)}
+        href={props.profileURL}
+        target="_blank"
+        rel="noopener noreferrer"
         >
-            <img 
-            href={props.profileURL}
+            <img  
             style={{
                 height:"10vh"
             }}
-            src={props.img} 
+            src={img} 
             alt={props.siteName}></img>
-        </div>
+        </a>
     )
+        
 };
 
 export default Profile;
