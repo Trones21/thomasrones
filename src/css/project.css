@@ -1,3 +1,7 @@
+.projectList{
+    margin-bottom: 16px;
+}
+
 .project{
     width:20vw;
     height: 10vh;

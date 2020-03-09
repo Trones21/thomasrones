@@ -61,7 +61,7 @@ function Project(props) {
         githubIcon =
             <a
                 className="icon"
-                href={props.siteURL}
+                href={props.githubURL}
                 target="_blank"
                 rel="noopener noreferrer"
             > <img style={{ height: "32px" }} src={GithubLogo} alt="Img"></img>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from './Profile';
+
 import PropTypes from 'prop-types';
 import '../css/Profile.css';
 import SOLogo from '../images/stackoverflow.png';
@@ -12,11 +12,9 @@ import TableauLogoDef from '../images/tableauDef.png';
 import GithubLogoDef from '../images/githubDef.png';
 import TwitterLogoDef from '../images/twitterDef.png';
 
+import Profile from './Profile';
 
-// const Profiles = [{
-//     Title:"Stack Overflow"
-// },
-// ]
+
 
 
 const ProfileList = () => {
