@@ -22,10 +22,16 @@ const WorkSamples = () => {
             siteURL="https://unpivot-sql.com/"
           />
           <Project
-            Name="SQL Data Quality"
-            Description="SQL scripts for creating data quality tables and accompanying Tableau Dashboards for data analysis"
+            Name="DB Data Quality"
+            Description="SQL scripts for creating data quality tables and accompanying Tableau Dashboards for analysis"
             githubURL="https://github.com/Trones21/sql-data-quality"
-            siteURL="" />
+            siteURL="" /> 
+          <Project
+            Name="Domaining Toolset"
+            Description="Tools & Resources for Domainers"
+            githubURL="https://github.com/Trones21/DomainingToolset"
+            siteURL="https://domainingtoolset.com/"
+          />
 
         </div>
         <div style={{ margin: "4px" }}>
@@ -33,34 +39,29 @@ const WorkSamples = () => {
         </div>
         <div className="projectList">
           <Project
-            Name="RainDropz"
-            Description="A association based game for learning"
-            githubURL="https://github.com/Trones21/Raindropz_JS"
-            siteURL="" />
-
-          <Project
             Name="Fluent Through Music"
             Description="Learn new languages by interactively listening to music"
             githubURL="https://github.com/Trones21/fluent-through-music"
-            siteURL="" />
+            siteURL="http://fluent-through-music.s3-website.us-east-2.amazonaws.com" />
 
-          <Project
-            Name="Domaining Toolset"
-            Description="Tools & Resources for Domainers"
-            githubURL=""
-            siteURL="" /*"https://domainingtoolset.com/"*/
-          />
         </div>
         <div style={{ margin: "4px" }}>
           Work In Progress (Inactive):
         </div>
         <div className="projectList">
+        <Project
+            Name="RainDropz"
+            Description="An association based game for learning"
+            githubURL="https://github.com/Trones21/Raindropz_JS"
+            siteURL="" />
+
           <Project
             Name="Restful Testing"
             Description="Create tests for REST API endpoints"
             githubURL="https://github.com/Trones21/RESTful_Testing"
             siteURL=""  //"https://restfultesting.com/" 
           />
+          
           <Project
             Name="Envato Scraper"
             Description="Scrapes data from the Envato marketplace"

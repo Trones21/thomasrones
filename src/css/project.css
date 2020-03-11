@@ -26,9 +26,15 @@
 }
 
 .icon{
-    margin: 6px 6px 2px 6px;
+    padding: 6px 6px 2px 6px;
     
-}
+    }
+
+.icon:hover{
+    background-color:rgb(4, 115, 160);
+    transform: scale(1.1);
+    transition: all .2s ease-in-out; 
+}    
 
 .icon img{
     text-align: center;

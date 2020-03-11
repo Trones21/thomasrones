@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { render } from '@testing-library/react';
 import "../css/Profile.css";
 
 Profile.propTypes = {

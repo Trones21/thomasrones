@@ -13,8 +13,19 @@ const YoutubeVideos = () => {
         <div className='player-wrapper'>
             <ReactPlayer 
             className='react-player'
+            url='https://youtu.be/y6bVVeqySCw' 
+            playing = {false}
+            controls = {true}  
+            width = '100%'
+            height = '100%'
+            />
+        </div>
+        <div className='player-wrapper'>
+            <ReactPlayer 
+            className='react-player'
             url='https://www.youtube.com/watch?v=ajOHKpZg9gA' 
-            playing = {false} 
+            playing = {false}
+            controls = {true} 
             width = '100%'
             height = '100%'
             />

@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/App.css';
 
-import headshot from './images/headshot.png';
+import headshot from './images/headshot.jpg';
 import LinkedInLogo from './images/linkedin.png';
 import PluralsightLogo from './images/pluralsight.png';
 import LinkedInLogoDef from './images/linkedinDef.png';

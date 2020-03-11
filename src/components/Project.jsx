@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import GithubLogo from '../images/github.png';
 import websiteLogo from '../images/websiteLogo.png';
-import infoLogo from '../images/exclamation-sign.png';
+import infoLogo from '../images/info.png';
 import "../css/tooltip.css";
 import "../css/project.css";
 
@@ -23,8 +23,6 @@ function Project(props) {
             return true;
         }
     };
-
-
 
     const handleMouseEnter = (element) => {
         setShowIcons(true)
@@ -66,6 +64,7 @@ function Project(props) {
                 rel="noopener noreferrer"
             > <img style={{ height: "32px" }} src={GithubLogo} alt="Img"></img>
             </a>
+        
     } else {
         // githubIcon =
         //     <a
@@ -96,7 +95,11 @@ function Project(props) {
                                 className="icon tooltip"
                                 
                                 >
-                                <span className="tooltiptext">{props.Description}</span>
+                                   <span className="tooltiptext">
+                                       <p><b>{props.Name}:</b></p>
+                                       <p>{props.Description}</p>
+                                    </span>
+                                {/* <span className="tooltiptext">{props.Name}:{props.Description}</span> */}
                                 <img style={{ height: "32px" }} src={infoLogo} alt="Img"></img>
                                 
                             </div>
