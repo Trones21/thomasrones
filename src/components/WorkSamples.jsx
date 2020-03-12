@@ -2,7 +2,7 @@ import * as React from 'react';
 import Project from './Project';
 
 //May convert to projectList components and pass predefined json...
-
+//Note styling will not work correctly if there are more than 3 elements in a row
 const WorkSamples = () => {
     return (
     <>

@@ -92,13 +92,12 @@ function Project(props) {
                             {siteIcon}
                             {githubIcon}
                             <div
-                                className="icon tooltip"
-                                
+                                className="icon tooltip"  
                                 >
-                                   <span className="tooltiptext">
+                                   <div className="tooltiptext">
                                        <p><b>{props.Name}:</b></p>
                                        <p>{props.Description}</p>
-                                    </span>
+                                    </div>
                                 {/* <span className="tooltiptext">{props.Name}:{props.Description}</span> */}
                                 <img style={{ height: "32px" }} src={infoLogo} alt="Img"></img>
                                 
