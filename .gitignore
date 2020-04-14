@@ -12,6 +12,7 @@
 /build
 
 # misc
+DeployedCommit.txt
 .vs
 .DS_Store
 .env.local
