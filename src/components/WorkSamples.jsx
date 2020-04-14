@@ -43,6 +43,21 @@ const WorkSamples = () => {
             Description="Learn new languages by interactively listening to music"
             githubURL="https://github.com/Trones21/fluent-through-music"
             siteURL="http://fluent-through-music.s3-website.us-east-2.amazonaws.com" />
+          
+           <Project
+            Name="Trade Analytics"
+            Description="See Performance and Analysis of your TD Ameritrade Account"
+            githubIsPrivate= {true}
+            githubURL="https://github.com/Trones21/TradeAnalytics"
+            siteURL="" />
+
+            <Project
+            Name="inGroups"
+            Description="LinkedIn Groups Analysis"
+            githubIsPrivate= {true}
+            githubURL="https://github.com/Trones21/InGroups"
+            siteURL="" />
+
 
         </div>
         <div style={{ margin: "4px" }}>

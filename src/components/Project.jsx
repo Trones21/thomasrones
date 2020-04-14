@@ -9,6 +9,7 @@ import "../css/project.css";
 Project.propTypes = {
     Name: PropTypes.string,
     Description: PropTypes.string,
+    githubIsPrivate: PropTypes.bool,
     githubURL: PropTypes.string,
     siteURL: PropTypes.string,
 
