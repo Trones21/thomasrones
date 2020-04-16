@@ -48,15 +48,15 @@ const WorkSamples = () => {
             Name="Trade Analytics"
             Description="See Performance and Analysis of your TD Ameritrade Account"
             githubIsPrivate= {true}
-            githubURL="https://github.com/Trones21/TradeAnalytics"
+            githubURL=""
             siteURL="" />
 
             <Project
-            Name="inGroups"
+            Name="Grouped.in"
             Description="LinkedIn Groups Analysis"
             githubIsPrivate= {true}
-            githubURL="https://github.com/Trones21/InGroups"
-            siteURL="" />
+            githubURL=""
+            siteURL="grouped.in" />
 
 
         </div>
