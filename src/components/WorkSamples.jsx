@@ -35,7 +35,7 @@ const WorkSamples = () => {
 
         </div>
         <div style={{ margin: "4px" }}>
-          Work In Progress (Active):
+          On Indefinite Hold:
         </div>
         <div className="projectList">
           <Project
@@ -44,24 +44,12 @@ const WorkSamples = () => {
             githubURL="https://github.com/Trones21/fluent-through-music"
             siteURL="http://fluent-through-music.s3-website.us-east-2.amazonaws.com" />
           
-           <Project
-            Name="Trade Analytics"
-            Description="See Performance and Analysis of your TD Ameritrade Account"
-            githubIsPrivate= {true}
-            githubURL=""
-            siteURL="" />
-
             <Project
             Name="Grouped.in"
             Description="LinkedIn Groups Analysis"
             githubIsPrivate= {true}
             githubURL=""
-            siteURL="grouped.in" />
-
-
-        </div>
-        <div style={{ margin: "4px" }}>
-          Work In Progress (Inactive):
+            siteURL="https://grouped.in" />
         </div>
         <div className="projectList">
         <Project

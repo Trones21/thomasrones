@@ -10,6 +10,7 @@ import PluralsightLogoDef from './images/pluralsightDef.png';
 import FeaturedProfile from './components/FeaturedProfile';
 import ProfileList from './components/ProfileList';
 import WorkSamples from './components/WorkSamples';
+import YoutubeUI from './components/YoutubeUI';
 import YoutubeVideos from './components/YoutubeVideos';
 
 const PicStyle = {
@@ -41,7 +42,7 @@ function App() {
         <br></br>
         <WorkSamples />
         <br></br>
-        <YoutubeVideos />
+        <YoutubeUI />
       </div>
       <br></br>
 
