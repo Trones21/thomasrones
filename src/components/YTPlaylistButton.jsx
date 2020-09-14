@@ -17,7 +17,7 @@ function YTPlaylistButton(props){
     return (
     
        <>
-        <div class="playlist-selector" onClick={handleClick}>{props.text}
+        <div className="playlist-selector" onClick={handleClick}>{props.text}
         </div>
         </>
         )
