@@ -11,7 +11,7 @@ import FeaturedProfile from './components/FeaturedProfile';
 import ProfileList from './components/ProfileList';
 import WorkSamples from './components/WorkSamples';
 import YoutubeUI from './components/YoutubeUI';
-import YoutubeVideos from './components/YoutubeVideos';
+
 
 const PicStyle = {
   height: "20vh",
@@ -23,6 +23,7 @@ const AppStyle = {
 }
 
 function App() {
+  console.log("B:" + process.env.REACT_APP_YTAPIKEY)
   return (
     <div className="App">
       <div style={AppStyle}>
@@ -32,7 +33,7 @@ function App() {
         </div>
         <div style={{ padding: "1vh" }}>
           <p style={{ fontSize: "40px", margin: "5px" }}>Thomas Rones</p>
-          <p style={{ margin: "10px" }}>"To Build or To Buy, that is the Question"</p> {/*😂*/}
+          <p style={{ margin: "10px" }}>Software Engineering + BioInformatics</p> {/*😂*/}
         </div>
         <div style={{ padding: "1vh", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
           <FeaturedProfile siteName="LinkedIn" defaultImg={LinkedInLogoDef} hoverImg={LinkedInLogo} profileURL="https://www.linkedin.com/in/thomasrones/" />

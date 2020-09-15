@@ -31,9 +31,18 @@ const WorkSamples = () => {
             Description="Tools & Resources for Domainers"
             githubURL="https://github.com/Trones21/DomainingToolset"
             siteURL="https://domainingtoolset.com/"
-          />
+          /> 
+      </div>
+         <div className="projectList">
+         <Project
+          Name="React Portfolio Website"
+          Description="This site! The React project can easily be modified for your own profile. Youtube tutorials coming soon"
+          githubURL="https://github.com/Trones21/thomasrones"
+          siteURL=""
+        />
+         </div>
 
-        </div>
+        
         <div style={{ margin: "4px" }}>
           On Indefinite Hold:
         </div>

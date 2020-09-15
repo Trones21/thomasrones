@@ -4,8 +4,8 @@ import '../css/buttons.css'
 
 
 YTPlaylistButton.propTypes = {
-    text: propTypes.string
-    
+    text: propTypes.string,
+    getIDs: propTypes.func,
 }
     
 
@@ -13,7 +13,6 @@ YTPlaylistButton.propTypes = {
 function YTPlaylistButton(props){
 
     const handleClick = () => props.getIDs(props.text)
-    
     return (
     
        <>

@@ -3,7 +3,10 @@ import ReactPlayer from 'react-player';
 import '../css/youtubePlayer.css';
 
 const YoutubeVideos = (props) => {
+    
     let YTplayers = [] 
+
+
     for (let vidID of props.vidIDs){
     YTplayers.push(
     <div className='player-wrapper'>
