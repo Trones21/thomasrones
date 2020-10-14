@@ -10,6 +10,7 @@ const YoutubeUI = () => {
     const APIKey = process.env.REACT_APP_YTAPIKEY;
     const BaseURL = "https://www.googleapis.com/youtube/v3/";
     const uploadsPlaylistID = "UU-atnCyiweZ-L16Of82d4Vg";
+    const playlistsToExclude = ["PLU8JULtUESmSL-ViNugXC0F5vdNRV6Y8L", "PLU8JULtUESmTXjidymMTqspFbn0bQ5ue0"]
     const [mostLiked, setMostLiked] = useState([]);
     const [mostViewed, setMostViewed] = useState([]);
     const [mostRecent, setMostRecent] = useState([]);
@@ -17,25 +18,36 @@ const YoutubeUI = () => {
 
     useEffect(()=> {
         console.log("using Effect")
-        getVideosStatsfromAPI(uploadsPlaylistID);   
+        getVideosStatsfromAPI(uploadsPlaylistID, playlistsToExclude);
+        console.log(playlistsToExclude)   
     }, []);
 
 
-    async function getVideosStatsfromAPI(uploadsPlaylistID){
+    async function getVideosStatsfromAPI(uploadsPlaylistID, playlistsToExclude){
         //Only one call is made with maxResults=50, not sure what the YT limit is per call
-        let videoIDs = await getvideoIDsfromAPI(uploadsPlaylistID)
-        let statsArr = [];
         //refactor to make it actually async
-        for(let videoID of videoIDs){
+        
+        let uploadedVideos = await getvideoIDsfromAPI(uploadsPlaylistID);
+        let excludedVideos = [];
+        for (let playlistID of playlistsToExclude){
+            excludedVideos.push(...await getvideoIDsfromAPI(playlistID))
+        }
+        let filteredVideos = await uploadedVideos.filter((id) => excludedVideos.indexOf(id) === -1)
+        console.log(uploadedVideos)
+        console.log(excludedVideos)
+        console.log(filteredVideos) 
+        let statsArr = [];
+       
+        for(let videoID of filteredVideos){
+
             let res = await fetch(BaseURL + "videos?part=statistics&id=" + videoID + "&key="+ APIKey);
             let data = await res.json();
-            console.log(data);
             statsArr.push({id: data.items[0].id, stats:data.items[0].statistics});
         }
 
         setMostLiked(setIDList(statsArr, 'likeCount', 3));
         setMostViewed(setIDList(statsArr, 'viewCount', 3));
-        setMostRecent(await getvideoIDsfromAPI(uploadsPlaylistID))
+        setMostRecent(filteredVideos.slice(0, 3))
     }
 
     function setIDList(statsArr, sortBy, maxNum){
@@ -106,6 +118,7 @@ const YoutubeUI = () => {
         </h3>
         <img className="youtubeLogo" src={youtubeLogoColor} alt="Youtube Logo"></img>
         </div>
+        <div className="playlist-selectorGroup-container">
         <div className="playlist-selector-container">
             <YTPlaylistButton text="Most Recent" getIDs={getVideoIDs} />
             <YTPlaylistButton text="Most Views" getIDs={getVideoIDs} />
@@ -115,6 +128,7 @@ const YoutubeUI = () => {
             <YTPlaylistButton text="UserScripts" getIDs={getVideoIDs}/>
             <YTPlaylistButton text="BioInformatics"getIDs={getVideoIDs} />
             <YTPlaylistButton text="API Looping"getIDs={getVideoIDs}/>
+        </div>
         </div>
         {VideoSection}
         </>
