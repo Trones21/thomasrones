@@ -9,7 +9,7 @@ import PluralsightLogoDef from './images/pluralsightDef.png';
 
 import FeaturedProfile from './components/FeaturedProfile';
 import ProfileList from './components/ProfileList';
-import WorkSamples from './components/WorkSamples';
+import WorkSamplesBasic from './components/WorkSamplesBasic';
 import YoutubeUI from './components/YoutubeUI';
 
 
@@ -41,7 +41,7 @@ function App() {
         </div>
         <ProfileList />
         <br></br>
-        <WorkSamples />
+        <WorkSamplesBasic />
         <br></br>
         <YoutubeUI />
       </div>

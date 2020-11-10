@@ -87,8 +87,7 @@ const YoutubeUI = () => {
                 setAltMsg("Coming Soon...");
                   break;
             case "API Looping":
-                videoIDs = await getvideoIDsfromAPI("PLU8JULtUESmQJmuT-BNQ0XUg_PuOqQ8G-");
-                setAltMsg('Next level web scraping. Tutorials Coming Soon! ');
+                videoIDs = await getvideoIDsfromAPI("PLU8JULtUESmQBKYgPr-dfPzGIESx4KduO");
                 break;
             case "UserScripts":
                 videoIDs = await getvideoIDsfromAPI("PLU8JULtUESmTUxj5--H8sGOjZD7bIw-nL");
