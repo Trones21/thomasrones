@@ -48,14 +48,7 @@ function Project(props) {
                 rel="noopener noreferrer"
             > <img style={{ height: "32px" }} src={websiteLogo} alt="Img"></img>
             </a>
-    } else {
-        // siteIcon =
-        //     <div
-        //         className="icon">
-        //         <img style={{ height: "32px" }} src={websiteLogo} alt="Img"></img>
-        //     </div>
-    }
-
+    } 
     if (hasURL(props.githubURL)) {
         githubIcon =
             <a
@@ -66,14 +59,7 @@ function Project(props) {
             > <img style={{ height: "32px" }} src={GithubLogo} alt="Img"></img>
             </a>
         
-    } else {
-        // githubIcon =
-        //     <a
-        //         className="icon">
-        //         <img style={{ height: "32px" }} src={noGithubLogo} alt="Img"></img>
-        //     </a>
-
-    }
+    } 
 
     return (
         <>
@@ -84,11 +70,10 @@ function Project(props) {
             >
                 {showIcons ?
                     <>
-                        <div style={{ zIndex: 1, position: "relative", color:"darkgray" }}>
+                        <div className="projectTitleHovered">
                             {props.Name}
                         </div>
-                        <div className="icons"
-                        style={{position:"absolute"}}
+                        <div className="icons iconsMobile"
                         >
                             {siteIcon}
                             {githubIcon}
@@ -99,14 +84,13 @@ function Project(props) {
                                        <p><b>{props.Name}:</b></p>
                                        <p>{props.Description}</p>
                                     </div>
-                                {/* <span className="tooltiptext">{props.Name}:{props.Description}</span> */}
                                 <img style={{ height: "32px" }} src={infoLogo} alt="Img"></img>
                                 
                             </div>
                         </div>
                     </>
                     :
-                    <div style={{ position: "relative" }}>
+                    <div className="projectTitle">
                         {props.Name}
                     </div>
                 }

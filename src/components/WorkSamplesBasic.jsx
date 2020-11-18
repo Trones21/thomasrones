@@ -14,7 +14,7 @@ const WorkSamplesBasic = () => {
         <div className="projectList">
         <Project
             Name="CSV Helper"
-            Description="Javascript library & website for converting JSON to CSV"
+            Description="JavaScript library & site with various JSON & CSV tools"
             githubURL="https://github.com/Trones21/csv-helper"
             siteURL="https://csv-helper.com" /> 
           <Project
@@ -32,7 +32,7 @@ const WorkSamplesBasic = () => {
          <div className="projectList">
          <Project
           Name="React Portfolio Website"
-          Description="This site! The React project can easily be modified for your own profile. Youtube tutorials coming soon"
+          Description="This site! The React project can easily be modified for your own profile."
           githubURL="https://github.com/Trones21/thomasrones"
           siteURL=""
         />

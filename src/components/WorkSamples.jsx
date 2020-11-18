@@ -36,7 +36,7 @@ const WorkSamples = () => {
          <div className="projectList">
          <Project
           Name="React Portfolio Website"
-          Description="This site! The React project can easily be modified for your own profile. Youtube tutorials coming soon"
+          Description="This site! The React project can easily be modified for your own profile."
           githubURL="https://github.com/Trones21/thomasrones"
           siteURL=""
         />

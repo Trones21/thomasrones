@@ -11,6 +11,8 @@ import FeaturedProfile from './components/FeaturedProfile';
 import ProfileList from './components/ProfileList';
 import WorkSamplesBasic from './components/WorkSamplesBasic';
 import YoutubeUI from './components/YoutubeUI';
+import TabContainer from './components/TabContainer';
+import QuoteRotator from './components/QuoteRotator';
 
 
 const PicStyle = {
@@ -34,6 +36,7 @@ function App() {
         <div style={{ padding: "1vh" }}>
           <p style={{ fontSize: "40px", margin: "5px" }}>Thomas Rones</p>
           <p style={{ margin: "10px" }}>Software Engineering + BioInformatics</p> {/*😂*/}
+          <QuoteRotator/>
         </div>
         <div style={{ padding: "1vh", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
           <FeaturedProfile siteName="LinkedIn" defaultImg={LinkedInLogoDef} hoverImg={LinkedInLogo} profileURL="https://www.linkedin.com/in/thomasrones/" />
@@ -41,9 +44,10 @@ function App() {
         </div>
         <ProfileList />
         <br></br>
-        <WorkSamplesBasic />
+        <TabContainer/>
+        {/* <WorkSamplesBasic />
         <br></br>
-        <YoutubeUI />
+        <YoutubeUI /> */}
       </div>
       <br></br>
 
