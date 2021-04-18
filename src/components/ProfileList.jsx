@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import '../css/Profile.css';
+import '../css/Profiles.css';
 import SOLogo from '../images/stackoverflow.png';
 import TableauLogo from '../images/tableau.png';
 import GithubLogo from '../images/github.png';

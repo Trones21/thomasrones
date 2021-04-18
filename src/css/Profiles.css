@@ -1,0 +1,16 @@
+.profile {
+    margin: 0px 6px;
+    z-index: 2;
+
+}
+
+.featuredProfile{
+    margin: 2px 6px;
+    z-index: 2;
+}
+
+.profileList{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}

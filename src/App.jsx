@@ -2,6 +2,7 @@ import React from 'react';
 import './css/App.css';
 
 import headshot from './images/headshot.jpg';
+import bgPic from './images/hs1bw-bgRemoved.png';
 import LinkedInLogo from './images/linkedin.png';
 import PluralsightLogo from './images/pluralsight.png';
 import LinkedInLogoDef from './images/linkedinDef.png';
@@ -20,6 +21,13 @@ const PicStyle = {
   borderRadius: '50%'
 }
 
+const BgPicStyle = {
+  height: "150vh",
+  position: "absolute",
+  opacity: ".5",
+  zIndex: "1"
+}
+
 const AppStyle = {
   margin: '0 auto',
 }
@@ -30,13 +38,16 @@ function App() {
     <div className="App">
       <div style={AppStyle}>
         <br></br>
-        <div>
+        {/* <div>
           <img src={headshot} alt="Me" style={PicStyle}></img>
+        </div> */}
+        <div>
+          <img src={bgPic} alt="Me" style={BgPicStyle}></img>
         </div>
         <div style={{ padding: "1vh" }}>
           <p style={{ fontSize: "40px", margin: "5px" }}>Thomas Rones</p>
           <p style={{ margin: "10px" }}>Software Engineering + BioInformatics</p> {/*😂*/}
-          <QuoteRotator/>
+          {/* <QuoteRotator/> */}
         </div>
         <div style={{ padding: "1vh", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
           <FeaturedProfile siteName="LinkedIn" defaultImg={LinkedInLogoDef} hoverImg={LinkedInLogo} profileURL="https://www.linkedin.com/in/thomasrones/" />
@@ -44,10 +55,13 @@ function App() {
         </div>
         <ProfileList />
         <br></br>
-        <TabContainer/>
-        {/* <WorkSamplesBasic />
+        {/* Tabs Layout */}
+        {/* <TabContainer/> */}
+        
+        {/* Basic Layout */}
+        <WorkSamplesBasic />
         <br></br>
-        <YoutubeUI /> */}
+        <YoutubeUI />
       </div>
       <br></br>
 

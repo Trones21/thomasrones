@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import "../css/Profile.css";
+import "../css/Profiles.css";
 
 Profile.propTypes = {
     siteName: PropTypes.string,
