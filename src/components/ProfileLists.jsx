@@ -36,19 +36,23 @@ import TestComp from './TestComp';
 const chunkArray = (array, chunk_size) => Array(Math.ceil(array.length / chunk_size)).fill().map((_, index) => index * chunk_size).map(begin => array.slice(begin, begin + chunk_size));
 
 
-//ToDo; Create categories - ex - code, social, etc.
+//ToDo: 
+//Create categories - ex - code, social, etc.
+//Write code to create uniform logo sizes
 const ProfileLists = () => {
     
     let profilesJson = [
-        {SiteName: "Stack Overflow", hoverImg:SOLogo, defaultImg:SOLogoDef, profileURL:"https://stackoverflow.com/users/6314220/thomasrones"},
-        {SiteName:"Twitter", hoverImg:TwitterLogo, defaultImg:TwitterLogoDef, profileURL:"https://twitter.com/ThomasRones"},
-        {SiteName:"Reddit", hoverImg:RedditLogo, defaultImg:RedditLogoDef, profileURL:"https://www.reddit.com/user/AncientElevator9"},
+        
+        {SiteName:"Github", hoverImg:GithubLogo, defaultImg:GithubLogoDef ,profileURL:"https://github.com/Trones21"},
+        {SiteName:"Stack Overflow", hoverImg:SOLogo, defaultImg:SOLogoDef, profileURL:"https://stackoverflow.com/users/6314220/thomasrones"},
+        {SiteName:"HackerRank", hoverImg:HackerRankLogo, defaultImg:HackerRankLogoDef ,profileURL:"https://www.hackerrank.com/trones_de"},
         {SiteName:"Rosalind", hoverImg:RosalindLogo, defaultImg:RosalindLogoDef, profileURL:"http://rosalind.info/users/ITroneSI/" },
-
+        {SiteName:"Reddit", hoverImg:RedditLogo, defaultImg:RedditLogoDef, profileURL:"https://www.reddit.com/user/AncientElevator9"}, 
+        {SiteName:"Twitter", hoverImg:TwitterLogo, defaultImg:TwitterLogoDef, profileURL:"https://twitter.com/ThomasRones"},
         {SiteName:"Tableau" ,hoverImg:TableauLogo, defaultImg:TableauLogoDef, profileURL:"https://public.tableau.com/profile/thomas.j.rones#!/"},
         {SiteName:"TableauForums" ,hoverImg:TableauForumsLogo, defaultImg:TableauForumsLogoDef, profileURL:"https://community.tableau.com/s/profile/0054T000001O4T0"},
-        {SiteName:"Github", hoverImg:GithubLogo, defaultImg:GithubLogoDef ,profileURL:"https://github.com/Trones21"},
-        {SiteName:"HackerRank", hoverImg:HackerRankLogo, defaultImg:HackerRankLogoDef ,profileURL:"https://www.hackerrank.com/trones_de"},
+        
+        
         // {SiteName:"AlgoExpert",hoverImg:AlgoExpertLogo, defaultImg:AlgoExpertLogoDef, profileURL:"Need to complete 100 algorithms"}
     ];
     //Split into groups for each row, four per row seems to work well for me
