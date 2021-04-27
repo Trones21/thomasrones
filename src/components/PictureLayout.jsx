@@ -11,7 +11,7 @@ const PicStyle = {
   
   const BgPicStyle = {
     height: "150vh",
-    position: "absolute",
+    position: "fixed",
     opacity: ".5",
     zIndex: "1"
   }

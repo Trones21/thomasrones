@@ -7,7 +7,7 @@ import LinkedInLogoDef from './images/linkedinDef.png';
 import PluralsightLogoDef from './images/pluralsightDef.png';
 
 import FeaturedProfile from './components/FeaturedProfile';
-import ProfileList from './components/ProfileList';
+import ProfileLists from './components/ProfileLists';
 import WorkSamplesBasic from './components/WorkSamplesBasic';
 import YoutubeUI from './components/YoutubeUI';
 import TabContainer from './components/TabContainer';
@@ -15,8 +15,8 @@ import QuoteRotator from './components/QuoteRotator';
 import PictureLayout from './components/PictureLayout';
 
 
-const AppStyle = {
-  margin: '0 auto',
+const AppStyle = { 
+  margin: '0 auto'
 }
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
           <FeaturedProfile siteName="LinkedIn" defaultImg={LinkedInLogoDef} hoverImg={LinkedInLogo} profileURL="https://www.linkedin.com/in/thomasrones/" />
           <FeaturedProfile siteName="Pluralsight" defaultImg={PluralsightLogoDef} hoverImg={PluralsightLogo} profileURL="https://app.pluralsight.com/profile/thomas-rones" />
         </div>
-        <ProfileList />
+        <ProfileLists />
         <br></br>
         {/* Tabs Layout */}
         {/* <TabContainer/> */}

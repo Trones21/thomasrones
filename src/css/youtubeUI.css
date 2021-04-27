@@ -4,14 +4,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
     
+}
+
+.youtube-title{
+    z-index: 3; 
 }
 .youtubeLogo{
  width: 5vw;
  margin: 1vw 1vw;
  max-height: 58px;
  max-width: 58px;
+ z-index: 3;
 }
 
 .playlist-selectorGroup-container{
@@ -19,13 +24,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 }
 
 .playlist-selector-container{
    
     width: 45vw;
     display: inline-flex;
-
+    z-index: 3;
 }
 .playlist-selector{
     width: 15vw;
@@ -39,7 +45,7 @@
     margin: 5px 5px 5px 5px;
     border-radius: 40% 10% 40% 10%;
     background: #000000;
-    z-index: 2;
+    z-index: 3;
 }
 
 

@@ -112,7 +112,7 @@ const YoutubeUI = () => {
     
        <>
        <div className="youtube-header">
-        <h3>
+        <h3 className="youtube-title">
         YouTube
         </h3>
         <img className="youtubeLogo" src={youtubeLogoColor} alt="Youtube Logo"></img>

@@ -17,6 +17,12 @@
     z-index: 2;
 }
 
+.projectsFootnote{
+font-size:11px; 
+max-width:20vw; 
+z-index:3;
+}
+
 .icons{
     background-color: rgb(121, 121, 121);
     display: flex;
@@ -29,6 +35,13 @@
 }
 
 @media only screen and (max-width: 600px){
+    
+    
+.projNoteMobile{
+    max-width:60vw;
+    z-index:1; 
+}
+
     .iconsMobile{
         position: relative;
         top: -2vh;

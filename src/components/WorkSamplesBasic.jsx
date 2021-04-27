@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Project from './Project';
+import '../css/project.css';
 
 //May convert to projectList components and pass predefined json...
 //Note styling will not work correctly if there are more than 3 elements in a row
@@ -10,6 +11,9 @@ const WorkSamplesBasic = () => {
         marginBottom:'10px'}}>
             Projects:
     </h3>
+    <div style={{display:'flex', justifyContent:'center'}}>
+    <p className="projectsFootnote projNoteMobile"> *These are just a few of my projects which have an MVP deployed. See Github for more projects & Resume for current projects</p>
+    </div>
     <div className='workSamples'>
         <div className="projectList">
         <Project
