@@ -5,6 +5,7 @@ import websiteLogo from '../images/websiteLogo.png';
 import infoLogo from '../images/info.png';
 import "../css/tooltip.css";
 import "../css/project.css";
+import awsIcon from  '../images/cloudServicesIcons/aws.png'
 
 Project.propTypes = {
     Name: PropTypes.string,
@@ -12,7 +13,7 @@ Project.propTypes = {
     githubIsPrivate: PropTypes.bool,
     githubURL: PropTypes.string,
     siteURL: PropTypes.string,
-
+    // TechStack: PropTypes.array
 }
 let hoveredStyle;
 
@@ -80,9 +81,19 @@ function Project(props) {
                             <div
                                 className="icon tooltip"  
                                 >
-                                   <div className="tooltiptext">
-                                       <p><b>{props.Name}:</b></p>
-                                       <p>{props.Description}</p>
+                                   <div className="tooltiptextBox">
+                                       <p style={{margin: "4%"}}><b>{props.Name}:</b></p>
+                                       <p style={{margin: "2%"}}>{props.Description}</p>
+                                       
+                                       <div style={{display:"flex", justifyContent:"flex-start", alignItems:"center"}}>
+                                       <p style={{maxWidth:"15%", margin:"2% 5%"}}><b>Tech Stack</b></p>
+                                       {(props.TechStack)? props.TechStack.map( i => <img src={i} style={{maxWidth:"15%", margin:"2% 3% 4% 3%" }}></img>): "ToDo: Fix Me!!!" }
+                                       </div>
+                                       <div style={{display:"flex", justifyContent:"flex-start", alignItems:"center"}}>
+                                       <img style={{maxWidth:"15%", margin:"2% 5%"}} src={awsIcon}></img>
+                                       {(props.CloudServices)? props.CloudServices.map( i => <img src={i} style={{maxWidth:"15%", margin:"2% 3% 4% 3%" }}></img>): "No Cloud Services Used" }
+                                       </div>
+                                       
                                     </div>
                                 <img style={{ height: "32px" }} src={infoLogo} alt="Img"></img>
                                 

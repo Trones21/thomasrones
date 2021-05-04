@@ -3,7 +3,7 @@
     display: inline-block;
   }
   
-  .tooltiptext {
+  .tooltiptextBox {
     visibility: hidden;
     width: 20vw;
     background-color: black;
@@ -11,7 +11,7 @@
     text-align: center;
     font-size: medium;
     border-radius: 6px;
-    padding: 2px 6px 2px 6px;
+    padding: 6px;
     
     /* Position the tooltip */
     position: absolute;
@@ -20,12 +20,12 @@
     left: -10vw;
   }
   
-  .icon:hover .tooltiptext {
+  .icon:hover .tooltiptextBox {
     visibility: visible;
   }
 
   @media only screen and (max-width: 500px) {
-    .tooltiptext {
+    .tooltiptextBox {
       width: 30vw;
       left: -20vw;
     }
