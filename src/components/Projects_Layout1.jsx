@@ -12,14 +12,13 @@ import typeScriptIcon from '../images/techStackIcons/typeScript.png'
 
 /*AWS Icons*/
 import awsIcon from  '../images/cloudServicesIcons/aws.png'
-
 import s3 from '../images/cloudServicesIcons/s3.png'
 import route53 from '../images/cloudServicesIcons/route53.png'
 import cloudfront from '../images/cloudServicesIcons/cloudfront.png'
 
 //May convert to projectList components and pass predefined json...
 //Note styling will not work correctly if there are more than 3 elements in a row
-const WorkSamplesBasic = () => {
+const Projects_Layout1 = () => {
 
     return (
     <>
@@ -34,7 +33,7 @@ const WorkSamplesBasic = () => {
         <div className="projectList">
         <Project
             Name="CSV Helper"
-            Description="JavaScript library & site with various JSON & CSV tools"
+            Description="Site with JSON/CSV conversion, tools, etc."
             githubURL="https://github.com/Trones21/csv-helper"
             siteURL="https://csv-helper.com"
             TechStack={[javaScriptIcon]}
@@ -44,7 +43,8 @@ const WorkSamplesBasic = () => {
             Description="SQL scripts for creating data quality tables and accompanying Tableau Dashboards for analysis"
             githubURL="https://github.com/Trones21/sql-data-quality"
             siteURL=""
-            TechStack={[tableauIcon, sqlIcon]} /> 
+            TechStack={[tableauIcon, sqlIcon]}
+            CloudServices= "No cloud services used" /> 
           <Project
             Name="Domaining Toolset"
             Description="Tools & Resources for Domainers"
@@ -78,4 +78,4 @@ const WorkSamplesBasic = () => {
     );
 };
 
-export default WorkSamplesBasic;
+export default Projects_Layout1;

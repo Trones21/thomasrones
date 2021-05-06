@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import "../css/tabContainer.css";
 import Tab from './Tab'
 import YoutubeUI from './YoutubeUI';
-import WorkSamplesBasic from './WorkSamplesBasic'
+import Projects_Layout1 from './Projects_Layout1';
 
 
 const tabNames = ['Summary', 'Projects','Youtube', 'Scraping/DataViz']
@@ -17,7 +17,7 @@ function TabContainer(props){
             setshownComponent("This is a Summary component I need to build")
          break;
         case 'Projects':
-            setshownComponent(<WorkSamplesBasic />)
+            setshownComponent(<Projects_Layout1 />)
         break;
         case 'Youtube':
             setshownComponent(<YoutubeUI/>)

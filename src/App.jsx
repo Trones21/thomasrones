@@ -8,12 +8,12 @@ import PluralsightLogoDef from './images/pluralsightDef.png';
 
 import FeaturedProfile from './components/FeaturedProfile';
 import ProfileLists from './components/ProfileLists';
-import WorkSamplesBasic from './components/WorkSamplesBasic';
+import Projects_Layout1 from './components/Projects_Layout1';
 import YoutubeUI from './components/YoutubeUI';
 import TabContainer from './components/TabContainer';
 import QuoteRotator from './components/QuoteRotator';
 import PictureLayout from './components/PictureLayout';
-
+import LayoutSwitcher from './components/LayoutSwitcher';
 
 const AppStyle = { 
   margin: '0 auto'
@@ -21,11 +21,14 @@ const AppStyle = {
 
 function App() {
   console.log("B:" + process.env.REACT_APP_YTAPIKEY)
+
   return (
     <div className="App">
       <div style={AppStyle}>
         <br></br>
+        {/* <LayoutSwitcher /> */}
        <PictureLayout />
+       
         <div style={{ padding: "1vh" }}>
           <p style={{ fontSize: "40px", margin: "5px" }}>Thomas Rones</p>
           <p style={{ margin: "10px" }}>Software/Data/Web Engineering</p> {/*😂*/}
@@ -45,7 +48,7 @@ function App() {
         {/* <TabContainer/> */}
         
         {/* Basic Layout */}
-        <WorkSamplesBasic />
+        <Projects_Layout1/>
         <br></br>
         <YoutubeUI />
       </div>

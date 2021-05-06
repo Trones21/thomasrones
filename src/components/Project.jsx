@@ -13,7 +13,8 @@ Project.propTypes = {
     githubIsPrivate: PropTypes.bool,
     githubURL: PropTypes.string,
     siteURL: PropTypes.string,
-    // TechStack: PropTypes.array
+    TechStack: PropTypes.array
+    //CloudServices: Can take an Array of images or a string of Text
 }
 let hoveredStyle;
 
@@ -89,9 +90,11 @@ function Project(props) {
                                        <p style={{maxWidth:"15%", margin:"2% 5%"}}><b>Tech Stack</b></p>
                                        {(props.TechStack)? props.TechStack.map( i => <img src={i} style={{maxWidth:"15%", margin:"2% 3% 4% 3%" }}></img>): "ToDo: Fix Me!!!" }
                                        </div>
-                                       <div style={{display:"flex", justifyContent:"flex-start", alignItems:"center"}}>
+                                       
+                                       <div style={{display:"flex", justifyContent:"flex-start", alignItems:"center"}}>                                     
                                        <img style={{maxWidth:"15%", margin:"2% 5%"}} src={awsIcon}></img>
-                                       {(props.CloudServices)? props.CloudServices.map( i => <img src={i} style={{maxWidth:"15%", margin:"2% 3% 4% 3%" }}></img>): "No Cloud Services Used" }
+                                       {(Array.isArray(props.CloudServices))?
+                                       props.CloudServices.map( i => <img src={i} style={{maxWidth:"15%", margin:"2% 3% 4% 3%" }}></img>):props.CloudServices}
                                        </div>
                                        
                                     </div>
