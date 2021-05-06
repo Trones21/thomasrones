@@ -27,7 +27,10 @@ const Projects_Layout1 = () => {
             Projects:
     </h3>
     <div style={{display:'flex', justifyContent:'center'}}>
-    <p className="projectsFootnote projNoteMobile"> *These are just a few of my projects which have an MVP deployed. See Github for more projects & Resume for current projects</p>
+    <p className="projectsFootnote projNoteMobile"> 
+    *These are just a few of my personal projects (not work for clients). 
+    *I've chosen these projects to showcase differences in both the underlying tech and the project stage (some are just at the MVP stage, others are quite mature). 
+    *See Github for more projects & Resume for current projects</p>
     </div>
     <div className='workSamples'>
         <div className="projectList">

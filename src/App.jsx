@@ -14,6 +14,7 @@ import TabContainer from './components/TabContainer';
 import QuoteRotator from './components/QuoteRotator';
 import PictureLayout from './components/PictureLayout';
 import LayoutSwitcher from './components/LayoutSwitcher';
+import Freelancing from './components/Freelancing';
 
 const AppStyle = { 
   margin: '0 auto'
@@ -34,21 +35,28 @@ function App() {
           <p style={{ margin: "10px" }}>Software/Data/Web Engineering</p> {/*😂*/}
           {/* <QuoteRotator/> */}
         </div>
+        <div>
         <h3 style={{marginTop:'20px',
         marginBottom:'10px'}}>
             Profiles:
         </h3>
+        {/* This is a pill that will switch the profiles to  */}
+        <button>View by: Category / Featured/Other </button>
+        </div>
+        
         <div style={{ padding: "1vh", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
           <FeaturedProfile siteName="LinkedIn" defaultImg={LinkedInLogoDef} hoverImg={LinkedInLogo} profileURL="https://www.linkedin.com/in/thomasrones/" />
           <FeaturedProfile siteName="Pluralsight" defaultImg={PluralsightLogoDef} hoverImg={PluralsightLogo} profileURL="https://app.pluralsight.com/profile/thomas-rones" />
         </div>
         <ProfileLists />
+        <Freelancing/>
         <br></br>
         {/* Tabs Layout */}
         {/* <TabContainer/> */}
         
         {/* Basic Layout */}
         <Projects_Layout1/>
+        
         <br></br>
         <YoutubeUI />
       </div>
