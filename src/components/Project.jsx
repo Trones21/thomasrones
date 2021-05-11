@@ -83,20 +83,21 @@ function Project(props) {
                                 className="icon tooltip"  
                                 >
                                    <div className="tooltiptextBox">
-                                       <p style={{margin: "4%"}}><b>{props.Name}:</b></p>
-                                       <p style={{margin: "2%"}}>{props.Description}</p>
-                                       
-                                       <div style={{display:"flex", justifyContent:"flex-start", alignItems:"center"}}>
-                                       <p style={{maxWidth:"15%", margin:"2% 5%"}}><b>Tech Stack</b></p>
-                                       {(props.TechStack)? props.TechStack.map( i => <img src={i} style={{maxWidth:"15%", margin:"2% 3% 4% 3%" }}></img>): "ToDo: Fix Me!!!" }
+                                       <div style={{display:"flex", flexDirection:"column"}}>
+                                        <p style={{margin: "4%"}}><b>{props.Name}:</b></p>
+                                        <p  className="tooltipItem" style={{margin: "2%"}}>{props.Description}</p>
+                                        
+                                        <div className="tooltipItem" style={{display:"flex", justifyContent:"flex-start", alignItems:"center"}}>
+                                                <p className="txtS txtM txtL" style={{width:"25%", margin:"2% 5%"}}><b>Tech Stack</b></p>
+                                                {(props.TechStack)? props.TechStack.map( i => <img src={i} style={{maxWidth:"15%", margin:"2% 3% 4% 3%" }}></img>): "ToDo: Fix Me!!!" }
+                                                </div>
+                                                
+                                        <div className="tooltipItem" style={{display:"flex", justifyContent:"flex-start", alignItems:"center"}}>                                     
+                                                <img style={{width:"25%", margin:"2% 5%"}} src={awsIcon}></img>
+                                                {(Array.isArray(props.CloudServices))?
+                                                props.CloudServices.map( i => <img src={i} style={{maxWidth:"15%", margin:"2% 3% 4% 3%" }}></img>):props.CloudServices}
+                                        </div>
                                        </div>
-                                       
-                                       <div style={{display:"flex", justifyContent:"flex-start", alignItems:"center"}}>                                     
-                                       <img style={{maxWidth:"15%", margin:"2% 5%"}} src={awsIcon}></img>
-                                       {(Array.isArray(props.CloudServices))?
-                                       props.CloudServices.map( i => <img src={i} style={{maxWidth:"15%", margin:"2% 3% 4% 3%" }}></img>):props.CloudServices}
-                                       </div>
-                                       
                                     </div>
                                 <img style={{ height: "32px" }} src={infoLogo} alt="Img"></img>
                                 

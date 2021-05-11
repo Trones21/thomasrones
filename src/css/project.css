@@ -34,9 +34,19 @@ z-index:2;
     
 }
 
-@media only screen and (max-width: 600px){
-    
-    
+
+.txtL{
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 800px){
+    .txtM{
+        font-size: 10px;
+     }
+}
+
+
+@media only screen and (max-width: 600px){   
 .projNoteMobile{
     max-width:60vw;
     z-index:1; 
@@ -46,7 +56,12 @@ z-index:2;
         position: relative;
         top: -2vh;
     }
+
+    .txtS{
+       font-size: 8px;
+    }
 }
+
 
 .icon{
     padding: 6px 6px 2px 6px;
@@ -61,6 +76,12 @@ z-index:2;
 
 .icon img{
     text-align: center;
+}
+
+.tooltipItem{
+    height:25%
+    /* max-height:25% */
+
 }
 
 .projectTitleHovered{

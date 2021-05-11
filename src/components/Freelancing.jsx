@@ -13,6 +13,12 @@ const Freelancing = () => {
         </h3>
             
             {/* <Profile
+            SiteName = "Dice"
+            hoverImg = {i.hoverImg}
+            defaultImg = {i.defaultImg}
+            profileURL = {i.profileURL}/> */}
+            
+            {/* <Profile
             SiteName = "Toptal"
             hoverImg = {i.hoverImg}
             defaultImg = {i.defaultImg}

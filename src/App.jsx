@@ -41,7 +41,7 @@ function App() {
             Profiles:
         </h3>
         {/* This is a pill that will switch the profiles to  */}
-        <button>View by: Category / Featured/Other </button>
+        {/* <button>View by: Category / Featured/Other </button> */}
         </div>
         
         <div style={{ padding: "1vh", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
@@ -49,7 +49,7 @@ function App() {
           <FeaturedProfile siteName="Pluralsight" defaultImg={PluralsightLogoDef} hoverImg={PluralsightLogo} profileURL="https://app.pluralsight.com/profile/thomas-rones" />
         </div>
         <ProfileLists />
-        <Freelancing/>
+        {/* <Freelancing/> */}
         <br></br>
         {/* Tabs Layout */}
         {/* <TabContainer/> */}
