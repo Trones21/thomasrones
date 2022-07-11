@@ -9,8 +9,11 @@ const YoutubeUI = () => {
     const [videoIDs, setVideoIDs] = useState([]);
     const APIKey = process.env.REACT_APP_YTAPIKEY;
     const BaseURL = "https://www.googleapis.com/youtube/v3/";
+    
     const uploadsPlaylistID = "UU-atnCyiweZ-L16Of82d4Vg";
     const playlistsToExclude = ["PLU8JULtUESmSL-ViNugXC0F5vdNRV6Y8L", "PLU8JULtUESmTXjidymMTqspFbn0bQ5ue0"]
+    const portfolioPlaylistID = "PLU8JULtUESmT-ShL_YFwUJUYMqHNb5b6c"
+
     const [mostLiked, setMostLiked] = useState([]);
     const [mostViewed, setMostViewed] = useState([]);
     const [mostRecent, setMostRecent] = useState([]);
@@ -18,26 +21,28 @@ const YoutubeUI = () => {
 
     useEffect(()=> {
         console.log("using Effect")
-        getVideosStatsfromAPI(uploadsPlaylistID, playlistsToExclude);
-        console.log(playlistsToExclude)   
+        getVideosStatsfromAPI(portfolioPlaylistID);
+        
     }, []);
 
 
-    async function getVideosStatsfromAPI(uploadsPlaylistID, playlistsToExclude){
+    async function getVideosStatsfromAPI(dedicatedPlaylist, uploadsPlaylistID = 0, playlistsToExclude = []){
         //Only one call is made with maxResults=50, not sure what the YT limit is per call
         //refactor to make it actually async
         
-        let uploadedVideos = await getvideoIDsfromAPI(uploadsPlaylistID);
-        let excludedVideos = [];
-        for (let playlistID of playlistsToExclude){
-            excludedVideos.push(...await getvideoIDsfromAPI(playlistID))
+        let filteredVideos = [];
+        if(dedicatedPlaylist){
+            filteredVideos = await getvideoIDsfromAPI(dedicatedPlaylist);
+        }else{
+            let uploadedVideos = await getvideoIDsfromAPI(uploadsPlaylistID);
+            let excludedVideos = [];
+            for (let playlistID of playlistsToExclude){
+                excludedVideos.push(...await getvideoIDsfromAPI(playlistID))
+            }
+            filteredVideos = await uploadedVideos.filter((id) => excludedVideos.indexOf(id) === -1)
         }
-        let filteredVideos = await uploadedVideos.filter((id) => excludedVideos.indexOf(id) === -1)
-        console.log(uploadedVideos)
-        console.log(excludedVideos)
-        console.log(filteredVideos) 
+
         let statsArr = [];
-       
         for(let videoID of filteredVideos){
 
             let res = await fetch(BaseURL + "videos?part=statistics&id=" + videoID + "&key="+ APIKey);
@@ -83,7 +88,7 @@ const YoutubeUI = () => {
                 break;
             //Call API Now -- PK-ME - remember to update these playlists
             case "BioInformatics":
-                videoIDs = await getvideoIDsfromAPI("PLU8JULtUESmQge-n7sUBzZOEX5xHR7UIF");
+                //videoIDs = await getvideoIDsfromAPI("PLU8JULtUESmQge-n7sUBzZOEX5xHR7UIF");
                 setAltMsg("Coming Soon...");
                   break;
             case "API Looping":
