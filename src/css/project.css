@@ -1,9 +1,9 @@
-.projectList{
+.projectList {
     margin-bottom: 16px;
 }
 
-.project{
-    width:20vw;
+.project {
+    width: 20vw;
     height: 10vh;
     display: flex;
     flex-direction: column-reverse;
@@ -11,82 +11,81 @@
     align-items: center;
     /* outline-color: rgb(63, 63, 63);
     /* outline-width: 1px; */
-    /* outline-style: solid; */ 
+    /* outline-style: solid; */
     margin: 2px 10px 0px 10px;
     overflow-wrap: break-word;
     z-index: 2;
 }
 
-.projectsFootnote{
-font-size:12px; 
-max-width:20vw; 
-z-index:2;
+.projectsFootnote {
+    font-size: 12px;
+    max-width: 40vw;
+    z-index: 2;
 }
 
-.icons{
+.icons {
     background-color: rgb(121, 121, 121);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    z-index:2;
+    z-index: 2;
     position: absolute;
-    
+
 }
 
 
-.txtL{
+.txtL {
     font-size: 14px;
 }
 
-@media only screen and (max-width: 800px){
-    .txtM{
+@media only screen and (max-width: 800px) {
+    .txtM {
         font-size: 10px;
-     }
+    }
 }
 
 
-@media only screen and (max-width: 600px){   
-.projNoteMobile{
-    max-width:60vw;
-    z-index:1; 
-}
+@media only screen and (max-width: 600px) {
+    .projNoteMobile {
+        max-width: 60vw;
+        z-index: 1;
+    }
 
-    .iconsMobile{
+    .iconsMobile {
         position: relative;
         top: -2vh;
     }
 
-    .txtS{
-       font-size: 8px;
+    .txtS {
+        font-size: 8px;
     }
 }
 
 
-.icon{
+.icon {
     padding: 6px 6px 2px 6px;
-    
-    }
 
-.icon:hover{
-    background-color:rgb(4, 115, 160);
+}
+
+.icon:hover {
+    background-color: rgb(4, 115, 160);
     transform: scale(1.1);
-    transition: all .2s ease-in-out; 
-}    
+    transition: all .2s ease-in-out;
+}
 
-.icon img{
+.icon img {
     text-align: center;
 }
 
-.tooltipItem{
-    height:25%
-    /* max-height:25% */
+.tooltipItem {
+    height: 25%
+        /* max-height:25% */
 
 }
 
-.projectTitleHovered{
-z-Index: 1; 
-position: "absolute";
-color:rgb(169,169,169);
+.projectTitleHovered {
+    z-Index: 1;
+    position: "absolute";
+    color: rgb(169, 169, 169);
 }
-

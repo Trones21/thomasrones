@@ -33,7 +33,7 @@ function App() {
         <div style={{ padding: "1vh" }}>
           <p style={{ fontSize: "40px", margin: "5px" }}>Thomas Rones</p>
           <p style={{ margin: "10px" }}>Software Engineering</p> {/*😂*/}
-          {/* <QuoteRotator/> */}
+          <QuoteRotator/>
         </div>
         <div>
         <h3 style={{marginTop:'20px',

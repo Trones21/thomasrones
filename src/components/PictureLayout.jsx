@@ -18,7 +18,7 @@ const PicStyle = {
 
   const PictureLayout = () => {
     const { width } = useViewport();
-    const breakpoint = 620;
+    const breakpoint = 940;
   
     return width < breakpoint ? <img src={headshot} alt="Me" style={PicStyle}></img> : <img src={bgPic} alt="Me" style={BgPicStyle}></img>;
   }
