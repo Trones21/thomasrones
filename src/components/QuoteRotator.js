@@ -1,11 +1,10 @@
 import React from "react";
 import QuoteDisplay from "./QuoteDisplay";
 
-
 const quotes = [
   {
     "quote": "To unroll or not to unroll, that is the question",
-    "author": ""
+    "author": "Me"
   }, {
     "quote": "Dependency injection is a 25-dollar term for a 5-cent concept.",
     "author": ""
@@ -76,6 +75,7 @@ class QuoteRotator extends React.Component {
       <div className="flexColCenter quoteOuterContainer">
         <QuoteDisplay
           displayColor='white'
+          quotes={quotes}
           handleClick={this.handleClick}
           {...this.state}
         />

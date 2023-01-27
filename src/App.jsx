@@ -20,7 +20,7 @@ const AppStyle = {
 }
 
 function App() {
-  console.log("B:" + process.env.REACT_APP_YTAPIKEY)
+  console.log("YT:" + process.env.REACT_APP_YTAPIKEY)
 
   return (
     <div className="App">
@@ -57,7 +57,7 @@ function App() {
         <Projects_Layout1/>
         
         <br></br>
-        {/* <YoutubeUI /> */}
+        <YoutubeUI />
       </div>
       <br></br>
 

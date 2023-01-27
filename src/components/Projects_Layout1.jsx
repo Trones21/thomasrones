@@ -9,6 +9,8 @@ import angularIcon from '../images/techStackIcons/angular.png'
 import reactIcon from '../images/techStackIcons/react.png'
 import javaScriptIcon from '../images/techStackIcons/javaScript.png'
 import typeScriptIcon from '../images/techStackIcons/typeScript.png'
+import goIcon from '../images/techStackIcons/go.png'
+import mysqlIcon from '../images/techStackIcons/mySQL.png'
 
 /*AWS Icons*/
 import awsIcon from  '../images/cloudServicesIcons/aws.png'
@@ -28,7 +30,7 @@ const Projects_Layout1 = () => {
     </h3>
     <div style={{display:'flex', justifyContent:'center'}}>
     <p className="projectsFootnote projNoteMobile"> 
-    *These are just a few of my personal projects (not work for clients). 
+    *These are just a <b>few</b> of my personal projects (not work for clients). 
     *I've chosen these projects to showcase differences in both the underlying tech and the project stage (some are just at the MVP stage, others are quite mature). 
     *See Github for more projects & Resume for current projects</p>
     </div>
@@ -48,14 +50,7 @@ const Projects_Layout1 = () => {
             siteURL=""
             TechStack={[tableauIcon, sqlIcon]}
             CloudServices= "No cloud services used" /> 
-          <Project
-            Name="Domaining Toolset"
-            Description="Tools & Resources for Domainers"
-            githubURL="https://github.com/Trones21/DomainingToolset"
-            siteURL="https://domainingtoolset.com/"
-            TechStack={[typeScriptIcon]}
-            CloudServices={[s3, route53, cloudfront]}
-          /> 
+
       </div>
          <div className="projectList">
          <Project
@@ -66,7 +61,7 @@ const Projects_Layout1 = () => {
           TechStack={[reactIcon]}
           CloudServices={[s3, route53, cloudfront]}
         />
-                  <Project
+          <Project
             Name="Unpivot SQL"
             Description="An app that generates SQL to unpivot tables (columns to rows)"
             githubURL="https://github.com/Trones21/pivot-via-union"
@@ -74,6 +69,13 @@ const Projects_Layout1 = () => {
             TechStack={[reactIcon]}
             CloudServices={[s3, route53, cloudfront]}
           />
+            <Project
+            Name="Numonix"
+            Description="The imdb of Mnemonics"
+            githubURL="https://github.com/Trones21/mnemonics"
+            siteURL=""
+            TechStack={[angularIcon, goIcon, mysqlIcon]}
+            CloudServices= "Haven't finished/deployed MVP yet"/> 
          </div>
         </div>
 

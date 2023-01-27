@@ -20,7 +20,6 @@ const YoutubeUI = () => {
     const [altMsg, setAltMsg] = useState();
 
     useEffect(()=> {
-        console.log("using Effect")
         getVideosStatsfromAPI(portfolioPlaylistID);
         
     }, []);
@@ -91,7 +90,7 @@ const YoutubeUI = () => {
                 //videoIDs = await getvideoIDsfromAPI("PLU8JULtUESmQge-n7sUBzZOEX5xHR7UIF");
                 setAltMsg("Coming Soon...");
                   break;
-            case "API Looping":
+            case "Scraping":
                 videoIDs = await getvideoIDsfromAPI("PLU8JULtUESmQBKYgPr-dfPzGIESx4KduO");
                 break;
             case "UserScripts":
@@ -128,10 +127,12 @@ const YoutubeUI = () => {
             <YTPlaylistButton text="Most Views" getIDs={getVideoIDs} />
             <YTPlaylistButton text="Most Liked" getIDs={getVideoIDs} />
         </div>
-        <div className="playlist-selector-container">
+        <div 
+        className="playlist-selector-container"
+        style={{justifyContent:'center'}}>
             <YTPlaylistButton text="UserScripts" getIDs={getVideoIDs}/>
-            <YTPlaylistButton text="BioInformatics"getIDs={getVideoIDs} />
-            <YTPlaylistButton text="API Looping"getIDs={getVideoIDs}/>
+            {/* <YTPlaylistButton text=""getIDs={getVideoIDs} /> */}
+            <YTPlaylistButton text="Scraping"getIDs={getVideoIDs}/>
         </div>
         </div>
         {VideoSection}
