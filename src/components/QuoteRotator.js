@@ -23,8 +23,6 @@ const quotes = [
     "quote": "The purpose of bureaucracy is to compensate for incompetence and a lack of discipline.",
     "author": "Jim Collins"
   },
-
-
 ]
 
 class QuoteRotator extends React.Component {
@@ -46,13 +44,13 @@ class QuoteRotator extends React.Component {
 
   componentDidMount() {
     this.timerID = setInterval(() => {
-      const generateRandomQuote = this.randomQuote();
+      const randQuote = this.randomQuote();
       this.setState({
-        quote: generateRandomQuote.quote,
-        author: generateRandomQuote.author
+        quote: randQuote.quote,
+        author: randQuote.author,
       });
       this.shuffleQuotes(quotes)
-    }, 10000);
+    }, 30000);
   }
 
 
@@ -75,7 +73,7 @@ class QuoteRotator extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="flexColCenter quoteOuterContainer">
         <QuoteDisplay
           displayColor='white'
           handleClick={this.handleClick}

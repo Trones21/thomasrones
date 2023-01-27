@@ -1,9 +1,17 @@
+.quoteOuterContainer{
+
+}
+
 .quoteBox {
     max-width: 40vw;
+    margin-top:2vh;
+    margin-bottom: 2vh;
 }
 
 .quote {
     font-size: .6em;
+    margin-top:.8vh;
+    margin-bottom: 1.2vh;
 }
 
 .quoteAuthor {

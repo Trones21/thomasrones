@@ -24,11 +24,11 @@ const Freelancing = () => {
             defaultImg = {i.defaultImg}
             profileURL = {i.profileURL}/> */}
 
-            <Profile
+            {/* <Profile
             SiteName = "UpWork"
             hoverImg = {upworkHover}
             defaultImg = {upworkDefault}
-            profileURL = "https://www.upwork.com/o/profiles/users/~010c1e8a7a8dd563bd/"/>
+            profileURL = "https://www.upwork.com/o/profiles/users/~010c1e8a7a8dd563bd/"/> */}
 
         </div>
     )

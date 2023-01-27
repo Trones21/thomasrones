@@ -1,10 +1,10 @@
 import React from 'react';
 import './css/App.css';
 
-import LinkedInLogo from './images/linkedin.png';
-import PluralsightLogo from './images/pluralsight.png';
-import LinkedInLogoDef from './images/linkedinDef.png';
-import PluralsightLogoDef from './images/pluralsightDef.png';
+import LinkedInLogo from './images/profileLogos/linkedin.png';
+import PluralsightLogo from './images/profileLogos/pluralsight.png';
+import LinkedInLogoDef from './images/profileLogos/linkedinDef.png';
+import PluralsightLogoDef from './images/profileLogos/pluralsightDef.png';
 
 import FeaturedProfile from './components/FeaturedProfile';
 import ProfileLists from './components/ProfileLists';
@@ -14,7 +14,6 @@ import TabContainer from './components/TabContainer';
 import QuoteRotator from './components/QuoteRotator';
 import PictureLayout from './components/PictureLayout';
 import LayoutSwitcher from './components/LayoutSwitcher';
-import Freelancing from './components/Freelancing';
 
 const AppStyle = { 
   margin: '0 auto'
@@ -58,7 +57,7 @@ function App() {
         <Projects_Layout1/>
         
         <br></br>
-        <YoutubeUI />
+        {/* <YoutubeUI /> */}
       </div>
       <br></br>
 

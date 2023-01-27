@@ -5,28 +5,30 @@ import '../css/Profiles.css';
 
 /*Could also import the entire folder, but then the filenames can't be different than the import names (More diffculty in debugging)*/
 //importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/));
+//PNGs commented out at EOF
 
 /*Color Logos - Show/Animate on Hover*/
-import AlgoExpertLogo from '../images/algoexpert.png';
-import GithubLogo from '../images/github.png';
-import HackerRankLogo from '../images/hackerrank.png';
-import RedditLogo from '../images/reddit.png';
-import RosalindLogo from '../images/rosalind.png';
-import SOLogo from '../images/stackoverflow.png';
-import TableauLogo from '../images/tableau-text-public.png';
-import TableauForumsLogo from '../images/tableau-text-forums.png';
-import TwitterLogo from '../images/twitter.png';
+import AlgoExpertLogo from '../images/profileLogos/algoexpert.webp';
+import GithubLogo from '../images/profileLogos/github.webp';
+import HackerRankLogo from '../images/profileLogos/hackerrank.webp';
+import RedditLogo from '../images/profileLogos/reddit.webp';
+import RosalindLogo from '../images/profileLogos/rosalind.webp';
+import SOLogo from '../images/profileLogos/stackoverflow.webp';
+import TableauLogo from '../images/profileLogos/tableau-text-public.webp';
+import TableauForumsLogo from '../images/profileLogos/tableau-text-forums.webp';
+import TwitterLogo from '../images/profileLogos/twitter.webp';
 
 /* B&W Logos */
-import AlgoExpertLogoDef from '../images/algoexpertDef.png';
-import GithubLogoDef from '../images/githubDef.png';
-import HackerRankLogoDef from '../images/hackerrankDef.png';
-import RedditLogoDef from '../images/redditDef.png';
-import RosalindLogoDef from '../images/rosalindDef.png';
-import SOLogoDef from '../images/stackoverflowDef.png';
-import TableauLogoDef from '../images/tableauDef.png';
-import TableauForumsLogoDef from '../images/tableauDef.png';
-import TwitterLogoDef from '../images/twitterDef.png';
+import AlgoExpertLogoDef from '../images/profileLogos/algoexpertDef.webp';
+import GithubLogoDef from '../images/profileLogos/githubDef.webp';
+import HackerRankLogoDef from '../images/profileLogos/hackerrankDef.webp';
+import RedditLogoDef from '../images/profileLogos/redditDef.webp';
+import RosalindLogoDef from '../images/profileLogos/rosalindDef.webp';
+import SOLogoDef from '../images/profileLogos/stackoverflowDef.webp';
+import TableauLogoDef from '../images/profileLogos/tableauDef.webp';
+import TableauForumsLogoDef from '../images/profileLogos/tableauDef.webp';
+import TwitterLogoDef from '../images/profileLogos/twitterDef.webp';
+
 
 import Profile from './Profile';
 import ProfileList from './ProfileList';
@@ -67,3 +69,26 @@ const ProfileLists = () => {
 }
 
 export default ProfileLists;
+
+
+// /*Color Logos - Show/Animate on Hover*/
+// import AlgoExpertLogo from '../images/profileLogos/algoexpert.png';
+// import GithubLogo from '../images/profileLogos/github.png';
+// import HackerRankLogo from '../images/profileLogos/hackerrank.png';
+// import RedditLogo from '../images/profileLogos/reddit.png';
+// import RosalindLogo from '../images/profileLogos/rosalind.png';
+// import SOLogo from '../images/profileLogos/stackoverflow.png';
+// import TableauLogo from '../images/profileLogos/tableau-text-public.png';
+// import TableauForumsLogo from '../images/profileLogos/tableau-text-forums.png';
+// import TwitterLogo from '../images/profileLogos/twitter.png';
+
+// /* B&W Logos */
+// import AlgoExpertLogoDef from '../images/profileLogos/algoexpertDef.png';
+// import GithubLogoDef from '../images/profileLogos/githubDef.png';
+// import HackerRankLogoDef from '../images/profileLogos/hackerrankDef.png';
+// import RedditLogoDef from '../images/profileLogos/redditDef.png';
+// import RosalindLogoDef from '../images/profileLogos/rosalindDef.png';
+// import SOLogoDef from '../images/profileLogos/stackoverflowDef.png';
+// import TableauLogoDef from '../images/profileLogos/tableauDef.png';
+// import TableauForumsLogoDef from '../images/profileLogos/tableauDef.png';
+// import TwitterLogoDef from '../images/profileLogos/twitterDef.png';

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import GithubLogo from '../images/github.png';
+import GithubLogo from '../images/profileLogos/github.png';
 import websiteLogo from '../images/websiteLogo.png';
 import infoLogo from '../images/info.png';
 import "../css/tooltip.css";

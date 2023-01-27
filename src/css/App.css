@@ -44,3 +44,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.flexColCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.flexRowCenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}

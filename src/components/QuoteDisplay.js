@@ -10,16 +10,15 @@ class QuoteDisplay extends React.Component {
 
     return (
       <div className="quoteBox">
-        <div>
+        <div className="flexRowCenter">
           <span>Favorite Quotes</span>
           <div
             className="icon tooltip"
           >
             <div className="tooltiptextBox">
-              <div style={{ display: "flex", flexDirection: "column" }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems:'center' }}>
                 <p className="tooltipItem" style={{ margin: "2%" }}>Like these quotes? Download them here:</p>
-                <button>JSON</button>
-                <button>PSV (Pipe Separated)</button>
+                <button className="btn" style={{width:'70%'}}>JSON</button>
               </div>
             </div>
             <img style={{ height: "32px" }} src={infoLogo} alt="Img"></img>

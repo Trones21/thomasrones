@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import headshot from '../images/headshot.png';
-import bgPic from '../images/hs1bw-bgRemoved.png';
+import headshot from '../images/headshot.avif';
+import bgPic from '../images/hs1bw-bgRemoved.avif';
 
 
 
